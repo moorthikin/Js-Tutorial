@@ -9,12 +9,17 @@
 
 body{
 
-    background-color: black;
-     display: flex;
-  justify-content: center;  /* horizontal center */
-  align-items: center;      /* vertical center */
-  height: 100vh;            /* full viewport height */
-  margin: 0;      
+body {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  justify-content: center; /* center vertically */
+  align-items: center; /* center horizontally */
+  height: 100vh; /* full screen height */
+  margin: 0; /* remove default margin */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
 }
 #count-paragraph{
     text-align: center;
@@ -52,6 +57,13 @@ button:hover{
 
 /* Random Number Generator */
 
-#random-button{
-   
-}
+/* #conditional-input{
+margin-top: 10px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+} */
+
