@@ -1,0 +1,27 @@
+Details on 16 KB Page Sizes (Android 15+):
+
+Page sizes:
+
+ In operating systems, physical memory (RAM) is divided into fixed-size blocks called pages. A page size defines the smallest unit of memory that can be allocated or managed by the CPU and OS.
+
+Traditional Android Page Size:
+ Most Android devices have historically used 4 KB (4096 bytes) as the default page size.
+
+Shift to 16 KB Page Size:
+ 1) Starting with Android 15, devices (especially those on ARMv9 architecture) are adopting 16 KB (16384 bytes) page sizes as the default. This is because:
+
+ 2) Better memory efficiency for large apps – fewer page table entries are needed, which reduces memory overhead in page tables.
+
+ 3) Improved performance – larger pages mean fewer Translation Lookaside Buffer (TLB) misses in the CPU, speeding up memory access.
+
+ 4) Scalability – modern apps and games require gigabytes of memory; 16 KB pages make memory mapping faster and more efficient.
+
+Why it impacts apps:
+
+Native code (C/C++ libraries, Flutter plugins, etc.) may make assumptions about 4 KB page size alignment. On a 16 KB system, such assumptions can break, leading to crashes or performance degradation.
+
+That’s why apps need to be rebuilt with toolchains/NDK versions that explicitly support 16 KB pages.
+
+Google Play Requirement:
+
+From November 1, 2025, Google Play requires all apps with native code to support 16 KB pages, otherwise updates will be blocked.
