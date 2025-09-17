@@ -1,0 +1,57 @@
+#my-paragraph{
+    color: red;
+    /* border: 3px solid black; */
+    font-weight: bold;
+    font-size: 23px;
+}
+
+/* for the counter App styling */
+
+body{
+
+    background-color: black;
+     display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  height: 100vh;            /* full viewport height */
+  margin: 0;      
+}
+#count-paragraph{
+    text-align: center;
+    font-size: 10em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#random-number-text{
+    color: white;
+}
+
+#container-count{
+    display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center;     /* vertically center */
+  /* height: 100vh;          */
+  gap: 10px;     
+}
+
+button{
+background-color: yellow;
+border: none;
+height: 40px;
+border-radius: 10px;
+
+}
+
+
+button:hover{
+
+    background-color: rgb(234, 0, 255);
+    color: white;
+}
+
+
+/* Random Number Generator */
+
+#random-button{
+   
+}
