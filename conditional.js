@@ -60,3 +60,14 @@ if(age == 0){
     }
 }
 
+let count = 0;
+do {
+    if(count === 5){
+console.log(count);
+break;
+    }
+    console.log(count);
+    count++;
+}
+while( count <= 10)
+
